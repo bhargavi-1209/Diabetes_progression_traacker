@@ -167,7 +167,7 @@ st.dataframe(df.corr(numeric_only=True))
 st.subheader("📦 Outlier Detection")
 fig5, ax5 = plt.subplots()
 ax5.boxplot([df["ProgressionScore"], df["GlucoseLevel"]/10, df["InsulinLevel"]],
-            labels=["Progression", "Glucose÷10", "Insulin"])
+            tick_labels=["Progression", "Glucose÷10", "Insulin"])
 ax5.set_title("Outlier Check")
 st.pyplot(fig5)
 # ─── MODEL ───
